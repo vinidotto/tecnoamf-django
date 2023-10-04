@@ -1,0 +1,58 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Project</title>
+    <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
+</head>
+<header>
+    <div class="topo-left">
+        <img src="{% static 'css/img/logo.png' %}" alt="">
+        <h1>Carteira do Estudante Digital</h1>
+    </div>
+    <div class="topo-right">
+        <a href="{% url 'home' %}">Início</a>
+        <a href="{% url 'informacoes' %}">Informações</a>
+    </div>
+</header>
+<body>
+    <div class="conteiner-all">
+        <div class="conteiner-hist">
+            <h1>Histórico</h1>
+            <table border="1">
+                <tr>
+                    <td>Disciplina</td>
+                    <td>Nota</td>
+                    <td>Período</td>
+                </tr>
+                <tr>
+                    <td>Programação orientada a objetos</td>
+                    <td>9.5</td>
+                    <td>4º Semestre</td>      
+                </tr>
+                <tr>
+                    <td>Estatística Avançada</td>
+                    <td>8.0</td>
+                    <td>3º Semestre</td>      
+                </tr>
+                <tr>
+                    <td>Engenharia de Software</td>
+                    <td>7.8</td>
+                    <td>5º Semestre</td>      
+                </tr>
+                <tr>
+                    <td>Inteligência Artificial</td>
+                    <td>9.2</td>
+                    <td>6º Semestre</td>      
+                </tr>
+                
+                </table>
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>
