@@ -1,0 +1,196 @@
+body{
+    background-image: url("img/foto.png");
+    background-size:cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 60rem; 
+    font-family: open sans,Helvetica,Arial,sans-serif;
+}
+
+
+header{
+    display: flex;
+    align-items: center;
+    background-color: #5282e0;
+    max-width: 100%;
+    height: 10rem;
+    justify-content: space-around;
+    color: white;
+    font-family: open sans,Helvetica,Arial,sans-serif;
+}
+
+.topo-left img{
+    width: 150px;
+    padding-left: 2rem;
+}
+
+.topo-left{
+    display: flex;
+    justify-content: left;
+    gap: 5rem;
+    align-items: center;
+
+}
+
+.topo-right{
+    display: flex;
+    gap: 10rem;
+    justify-content:space-around ;
+    
+}
+
+.topo-right a{
+    text-decoration: none;
+    color: white;
+    font-size: 1.5rem;
+    font-family: open sans,Helvetica,Arial,sans-serif;
+}
+
+.topo-right a:hover{
+    background-color: #0181d4;
+    border-radius: 10px;
+    padding: 5px;
+}
+
+
+.vestibular{
+    display: flex;
+    justify-content: center;
+    padding-top: 10rem;
+}
+
+.vestibular img{
+    width: 50rem;
+}
+
+
+
+
+/* PAGINA INFOSS */
+
+.conteiner-all{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    height: 50rem; 
+}
+
+.conteiner{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #5282e0;
+    align-items: center;
+    width: 80rem;
+    height: 40rem;
+}
+
+.title{
+    display: flex;
+    padding: 1rem;
+    color: white;
+    justify-content: center;
+    font-size: 2rem;
+}
+
+.conteiner img{
+    padding-top: 3rem;
+    width: 250px;
+    height: 250px;
+    border: 8px;
+}
+
+.conteiner ul{
+    padding-top: 2rem;
+}
+
+.conteiner ul li{
+    list-style-type: none;
+    padding: 0.3rem;
+    color: white;
+    font-size: 1.2rem;
+
+}
+
+
+/* PAGINA HISTÓRICO*/
+
+.conteiner-hist{
+    display: flex;
+    margin-top: 2rem;
+    flex-direction: column;
+    justify-content: center;
+    background-color: #5282e0;
+    align-items: center;
+    width: 80rem;
+    height: 40rem;
+
+}
+
+
+h1{
+    text-align: center;
+    color: white;
+    }
+    
+table, th, td {
+    border: 1px solid black;
+}
+
+table {
+    background-color: #ffffff;
+    border-collapse: collapse;
+}
+
+th, td{
+    padding: 10px;
+    text-align: center;
+    width: 15rem;
+}
+
+th{
+    font-weight: bold;
+}
+
+tr:hover{
+    background-color: #00428d;
+    color: rgb(0, 0, 0);
+}
+
+
+
+
+@media only screen and (max-width: 600px) {
+    header {
+        flex-direction: column;
+        height: auto;
+        padding: 1rem;
+    }
+
+    .topo-left {
+        gap: 1rem;
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+    }
+
+    .topo-left img {
+        width: 100px; 
+        padding-left: 0;
+    }
+
+    .topo-right {
+        gap: 1rem;
+        justify-content: center;
+        margin-top: 1rem;
+    }
+
+    .topo-right a {
+        font-size: 1rem; 
+    }
+
+    .vestibular img{
+        width: 20rem;
+    }
+}
